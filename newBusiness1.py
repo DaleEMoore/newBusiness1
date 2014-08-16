@@ -53,7 +53,7 @@ fileOutName = os.path.basename(__file__) + ".csv"
 print fileOutName
 fileOut = open(fileOutName, 'w')
 
-# TODO; put column headings out first.
+# put column headings out first.
 s4 = "ZipFile"
 s4 += ",TxtFile"
 s4 += ",DocumentNumber"
@@ -94,7 +94,6 @@ for filename in filenames:
         #01
         #02 Document Number:  20140486166 Book Type:  ASSUMED NAMES
         #03 Filed Date:  8/14/2014 Filing Time:  4:43 PM
-        # TODO; some fields are not being properly parsed across all TXT files.
         documentNumber = ad[2][18:29].strip()
         bookType = ad[2][42:].strip()
         fileDate = ad[3][12:22].strip()
@@ -114,13 +113,13 @@ for filename in filenames:
         #10 RIVERA, RUDY RAUL
         try:
             cp = ad[4].index("Comment:")
-            instrumentType = ad[4][18:cp - 1].strip() # TODO; should be through ("Comment:" - 2)
+            instrumentType = ad[4][18:cp - 1].strip()
             commentAD = ad[4][cp + 9:].strip()
         except:
             instrumentType = ""
             commentAD = ""
         numberOfPages = ad[5][11:].strip()
-        # TODO; business owner can be multiple lines and ends before 1) blank line then 2) "Property Address"
+        # TODO; Might miss some business owners; can be multiple lines and ends before 1) blank line then 2) "Property Address"
         businessOwner1 = ad[8].strip()
         businessOwner2 = ad[9].strip()
         businessOwner3 = ad[10].strip()
