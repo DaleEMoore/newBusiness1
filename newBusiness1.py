@@ -29,6 +29,8 @@ import os
 from Tkinter import Tk
 from tkFileDialog import askopenfilename
 Tk().withdraw() # we don't want a full GUI, so keep the root window from appearing
+# TODO; keep the last folder used for the next run.
+# TODO; default to files named *.ZIP.
 filename = askopenfilename() # show an "Open" dialog box and return the path to the selected file
 #print(filename)
 # /home/dalem/Downloads/BEXAR_TXT_08142014.ZIP
@@ -92,4 +94,6 @@ for member in zipMembers:
     #print s1
     #print propertyAddress1, propertyAddress2, propertyAddressCity, propertyAddressState, propertyAddressZip
     # /home/dalem/Downloads/BEXAR_TXT_08142014.ZIP
+    # TODO; put the data into a LibreOffice DB.
+    # TODO; work up mail/merge procedures for LibreOffice current version.
     print "{}, {}, {}".format(s1, s2, s3)
