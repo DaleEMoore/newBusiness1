@@ -1,0 +1,36 @@
+New businesses come in via ZIP as TXT files and look something like this:
+
+General Information
+
+Document Number:  20140486141 Book Type:  ASSUMED NAMES
+Filed Date:  8/14/2014 Filing Time:  2:06:19 PM
+Instrument Type:  ABANDONMENT Comment:
+# of Pages:  2
+Business Owner
+
+FIT THERAPY OF TEXAS OR FIT THERAPY OF TEXAS LLC
+ FIT THERAPY OF TEXAS OR FIT THERAPY OF TEXAS LLC
+
+Property Address
+
+Address 1: .
+Address 2: 1842 DEER TRAIL
+City: FLORESVILLE
+State: TX
+Zip: 78114-
+
+
+
+Overview
+Select ZIP file from Downloads
+Pull out TXT file(s)
+Process each TXT file extracting data and exporting into LibreOffice Database.
+
+
+Todo
+
+
+
+Logs
+Fri 15 Aug 2014 5:44 PM CST
+Created
