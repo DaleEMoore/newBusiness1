@@ -32,6 +32,9 @@ Tk().withdraw() # we don't want a full GUI, so keep the root window from appeari
 # keep the last folder used for the next run. (Maybe http://goo.gl/2lkJV0) or default to ~/Downloads.
 # default to files named *.ZIP. (Lots of info here http://tkinter.unpythonic.net/wiki/tkFileDialog)
 # Cool: http://nullege.com/codes/show/src@k@a@kamaelia-HEAD@Code@Python@Kamaelia@Kamaelia@Apps@Whiteboard@Decks.py/123/Tkinter.Tk.withdraw
+# TODO; persist theDir from previous run? Read my question here
+# http://programmers.stackexchange.com/questions/253527/where-to-save-something-between-invocations?noredirect=1#comment510007_253527
+# appdirs (https://pypi.python.org/pypi/appdirs/1.4.0) might be best part of figuring out where to save the data.
 theDir = "~/Downloads"
 filenames = askopenfilename(multiple=1,filetypes=[("Zip Archives",("*.zip", "*.ZIP"))],initialdir=theDir,title="Businesses ZIP with TXTs")
 #filename = askopenfilename(filetypes=[("Zip Archives",("*.zip", "*.ZIP"))],initialdir=theDir,title="Businesses ZIP with TXTs")
