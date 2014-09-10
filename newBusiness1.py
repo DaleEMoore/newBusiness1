@@ -21,6 +21,23 @@ State: TX
 Zip: 78114-
 """
 
+# TODO; Format error in BEXAR_TXT_09052014.ZIP 00000069.TXT
+"""
+General Information
+
+Document Number:  20140487023 Book Type:  ASSUMED NAMES
+Filed Date:  9/5/2014 Filing Time:  1:29:54 PM
+Instrument Type:  VOID Comment:  VOIDED
+# of Pages:  1
+Business Owner
+
+VOID, VOID VOID
+ VOID, VOID VOID
+"""
+# Since it's the last .TXT file in the .ZIP, I'll process each of the two .ZIP files one at a time.
+# Same problem in BEXAR_TXT_09082014.ZIP last two .TXT files 82 and 83. Maybe the last ones are
+# where the VOIDs go.
+
 __author__ = 'dalem'
 
 import os
