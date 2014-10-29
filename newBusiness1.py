@@ -109,6 +109,12 @@ for filename in filenames:
     for member in zipMembers:
         #print member, member.filename, member.orig_filename, member.date_time
         rd = file.read(member,"r")
+        # if file contains "  Internet Explorer cannot display the webpage " skip it.
+        if rd.find(" Internet Explorer cannot display the webpage ") <> -1:
+            # TODO; you have to remember to look at the console messages to see these.
+            # TODO; add counters showing the number of empty @ end of console run.
+            print (str(member.filename) + " is empty.")
+            continue
         #print rd
         ad = rd.splitlines()
         #00 General Information
