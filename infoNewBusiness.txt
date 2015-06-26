@@ -27,7 +27,9 @@ Pull out TXT file(s)
 Process each TXT file extracting data and exporting into LibreOffice Database.
 
 
-Todo
+TODO
+Improve this so that I get contact phone numbers from the Internet.
+
 
 
 

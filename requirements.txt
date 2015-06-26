@@ -1,0 +1,4 @@
+# C:\Users\dalem\PycharmProjects/newBusiness1>\Python27\Scripts\pip.exe install -r requirements.txt
+
+#python==2 # google-api-python-client v3 segoogle-api-python-clientems requires Python2
+dateutils
