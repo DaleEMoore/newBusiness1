@@ -28,7 +28,8 @@ Process each TXT file extracting data and exporting into LibreOffice Database.
 
 
 Todo
-
+Tkinter is not installed at DaleHome.QnD and after hours I've been unable to install it.
+    This is complicated because I've used pyenv.
 
 
 Logs
