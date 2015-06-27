@@ -30,6 +30,7 @@ Process each TXT file extracting data and exporting into LibreOffice Database.
 TODO
 Improve this so that I get contact phone numbers from the Internet.
 
+DaleHome.QnD can't run this because Tkinter won't install.
 
 
 
