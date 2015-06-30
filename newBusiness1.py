@@ -162,7 +162,12 @@ for filename in filenames:
             # "Property Address" (PA) can be on different lines skewing all following lines of data.
             # PA can start on line 11 and will go for as long as there are business owners. I'll capture 3 business owners, but there might be more.
             pa = 14
-            for paln in range(11, 16):
+            imin = 11
+            imax = 16
+            if len(ad) < imax:
+                imax=len(ad)
+
+            for paln in range(imin, imax):
                 if ad[paln].strip() == "Property Address":
                     pa = paln
                     break
@@ -173,16 +178,22 @@ for filename in filenames:
             #16 City: SAN ANTONIO
             #17 State: TX
             #18 Zip: 78252-
-            propertyAddress1 = ad[pa + 2][11:].strip()
-            propertyAddress2 = ad[pa + 3][11:].strip()
-            propertyAddressCity = ad[pa + 4][6:].strip()
-            propertyAddressState = ad[pa + 5][7:].strip()
-            propertyAddressZip = ad[pa + 6][5:].strip()
+            propertyAddress1 = propertyAddress2 = propertyAddressCity = propertyAddressState = propertyAddressZip = ""
+            # sometimes the property address is missing.
+            try:
+                propertyAddress1 = ad[pa + 2][11:].strip()
+                propertyAddress2 = ad[pa + 3][11:].strip()
+                propertyAddressCity = ad[pa + 4][6:].strip()
+                propertyAddressState = ad[pa + 5][7:].strip()
+                propertyAddressZip = ad[pa + 6][5:].strip()
+            except:
+                pass
             s3 = '"{}", "{}", "{}", "{}", "{}"'.format(propertyAddress1, propertyAddress2, propertyAddressCity, propertyAddressState, propertyAddressZip)
             #print s1
             #print propertyAddress1, propertyAddress2, propertyAddressCity, propertyAddressState, propertyAddressZip
             # /home/dalem/Downloads/BEXAR_TXT_08142014.ZIP
             s4 = "{}, {}, {}".format(s1, s2, s3)
+            # TODO; lookup phone numbers for this entity.
             print s4
             fileOut.writelines(s4 + "\n")
 fileOut.close()
