@@ -27,13 +27,30 @@ Pull out TXT file(s)
 Process each TXT file extracting data and exporting into LibreOffice Database.
 
 
+
+
 TODO
 Improve this so that I get contact phone numbers from the Internet.
 
-DaleHome.QnD can't run this because Tkinter won't install.
 
 
 
 Logs
 Fri 15 Aug 2014 5:44 PM CST
 Created
+
+Wed 2 Jul 2015 4:42 PM CST
+DaleHome.QnD can't run this because Tkinter won't install.
+    Tkinter is python2
+    tkinter is python3
+    python3's tkinter seems to work OK, convert to python3.
+    But what if the zipfile library only works with python2?
+    And what about dateutil?
+
+    tkinter fails on ""
+    ZipFile failing on "TypeError: pwd: expected bytes, got <class 'str'>"
+
+    I'm not sure how, but it's running now.
+    I went back to python2. Tkinter works now.
+    My previous bug where there is no "property address" failed and I downloaded the latest code with the fix.
+    It's working now with python2.
