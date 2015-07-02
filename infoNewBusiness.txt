@@ -31,7 +31,8 @@ Process each TXT file extracting data and exporting into LibreOffice Database.
 
 TODO
 Improve this so that I get contact phone numbers from the Internet.
-
+    Do the "TODO; lookup phone numbers for this entity" manually researching the best approach to automation.
+    Make some calls on the mining I've already done manually.
 
 
 

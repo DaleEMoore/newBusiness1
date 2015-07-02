@@ -193,8 +193,14 @@ for filename in filenames:
             #print propertyAddress1, propertyAddress2, propertyAddressCity, propertyAddressState, propertyAddressZip
             # /home/dalem/Downloads/BEXAR_TXT_08142014.ZIP
             s4 = "{}, {}, {}".format(s1, s2, s3)
-            # TODO; lookup phone numbers for this entity.
             print s4
+
+            # TODO; lookup phone numbers for this entity.
+            """
+            Search for BusinessOwner1 + PropertyAddress2 (Not if PO Box) + PropertyCity + PropertyState + PropertyZip + ", phone"
+            Google Place API is a good place to start
+            """
+
             fileOut.writelines(s4 + "\n")
 fileOut.close()
 # TODO; work up mail/merge procedures for LibreOffice current version.
