@@ -1,5 +1,14 @@
-New businesses come in via ZIP as TXT files and look something like this:
+Installation:
+    Download some BEXAR_TXT_08112014.ZIP type files into ~/Downloads
+    Install PyCharm
+    git clone https://github.com/DaleEMoore/newBusiness1.git
+    run newBusiness1.py
+    Select the BEXAR_TXT_08112014.ZIP type files in ~/Downloads
+    Look at output in newBusiness1.py.csv.
 
+
+New businesses come in via ZIP as TXT files and look something like this (but without the hyphen-space separator lines):
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 General Information
 
 Document Number:  20140486141 Book Type:  ASSUMED NAMES
@@ -18,7 +27,7 @@ Address 2: 1842 DEER TRAIL
 City: FLORESVILLE
 State: TX
 Zip: 78114-
-
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 
 Overview
@@ -55,3 +64,6 @@ DaleHome.QnD can't run this because Tkinter won't install.
     I went back to python2. Tkinter works now.
     My previous bug where there is no "property address" failed and I downloaded the latest code with the fix.
     It's working now with python2.
+
+Tuesday 16 February 2016 8:14 PM CST
+Caleb will be contacting some and doing some cold-call-sales.

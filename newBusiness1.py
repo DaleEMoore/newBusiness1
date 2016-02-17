@@ -145,14 +145,28 @@ for filename in filenames:
         except:
             instrumentType = ""
             commentAD = ""
-        numberOfPages = ad[5][11:].strip()
+        try:
+            numberOfPages = ad[5][11:].strip()
+        except:
+            # probably because there aren't this many lines in the .TXT file.
+            numberOfPages = 0 # TODO; some better error reporting is called for here.
         # TODO; Might miss some business owners; can be multiple lines and ends before 1) blank line then 2) "Property Address"
-        businessOwner1 = ad[8].strip()
+        try:
+            businessOwner1 = ad[8].strip()
+        except:
+            # probably because there aren't this many lines in the .TXT file.
+            businessOwner1 = "*** Too few lines in .TXT file!"
         if businessOwner1 == "VOID, VOID VOID":
             print "Avoided " + businessOwner1 + ", " + s1
         else:
-            businessOwner2 = ad[9].strip()
-            businessOwner3 = ad[10].strip()
+            try:
+                businessOwner2 = ad[9].strip()
+            except:
+                businessOwner2 = "*** Too few lines in .TXT file!"
+            try:
+                businessOwner3 = ad[10].strip()
+            except:
+                businessOwner3 = "*** Too few lines in .TXT file!"
             s2 = '"{}", "{}", "{}", "{}", "{}", "{}"'.format(instrumentType, commentAD, numberOfPages, businessOwner1, businessOwner2, businessOwner3)
             #print s1
             #print instrumentType, commentAD, numberOfPages, businessOwner1, businessOwner2, businessOwner3
