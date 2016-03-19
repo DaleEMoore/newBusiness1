@@ -1,45 +1,7 @@
-"""
-New businesses come in via ZIP as TXT files and look something like this:
+# python3 newBusiness1.py
+# See: infoNewBusiness.txt for more information.
 
-General Information
-
-Document Number:  20140486141 Book Type:  ASSUMED NAMES
-Filed Date:  8/14/2014 Filing Time:  2:06:19 PM
-Instrument Type:  ABANDONMENT Comment:
-# of Pages:  2
-Business Owner
-
-FIT THERAPY OF TEXAS OR FIT THERAPY OF TEXAS LLC
- FIT THERAPY OF TEXAS OR FIT THERAPY OF TEXAS LLC
-
-Property Address
-
-Address 1: .
-Address 2: 1842 DEER TRAIL
-City: FLORESVILLE
-State: TX
-Zip: 78114-
-"""
-
-# Format error in BEXAR_TXT_09052014.ZIP 00000069.TXT
-#   Same error in BEXAR_TXT_09102014.zip 00000055.TXT
-"""
-General Information
-
-Document Number:  20140487023 Book Type:  ASSUMED NAMES
-Filed Date:  9/5/2014 Filing Time:  1:29:54 PM
-Instrument Type:  VOID Comment:  VOIDED
-# of Pages:  1
-Business Owner
-
-VOID, VOID VOID
- VOID, VOID VOID
-"""
-# Since it's the last .TXT file in the .ZIP, I'll process each of the two .ZIP files one at a time.
-# Same problem in BEXAR_TXT_09082014.ZIP last two .TXT files 82 and 83. Maybe the last ones are
-# where the VOIDs go.
-
-__author__ = 'dalem'
+__author__ = 'DaleEMoore@gMail.Com'
 
 import os
 

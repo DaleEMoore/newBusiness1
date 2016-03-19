@@ -2,7 +2,7 @@ Installation:
     Download some BEXAR_TXT_08112014.ZIP type files into ~/Downloads
     Install PyCharm
     git clone https://github.com/DaleEMoore/newBusiness1.git
-    run newBusiness1.py
+    python3 newBusiness1.py
     Select the BEXAR_TXT_08112014.ZIP type files in ~/Downloads
     Look at output in newBusiness1.py.csv.
 
