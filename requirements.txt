@@ -1,6 +1,15 @@
 # C:\Users\dalem\PycharmProjects/newBusiness1>\Python27\Scripts\pip.exe install -r requirements.txt
 
-#python==2 # Python2 for ZipFile and Tkinter.
+dateutils
+
+#python==3 # Python3 for ZipFile and tkinter.
+
+#Python3
+#tkinter
+
 #Fails ZipFile processing. python==3 # converted because Tkinter not available at DaleHome.QnD.
 # No longer #python==2 # google-api-python-client v3 segoogle-api-python-clientems requires Python2
-dateutils
+
+#Python2
+#Tkinter
+

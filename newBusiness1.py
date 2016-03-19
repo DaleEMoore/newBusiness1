@@ -44,8 +44,16 @@ __author__ = 'dalem'
 import os
 
 #Select ZIP file from Downloads
-from Tkinter import Tk
-from tkFileDialog import askopenfilename
+try:
+    # for Python2
+    from Tkinter import *   ## notice capitalized T in Tkinter
+    from tkFileDialog import askopenfilename
+except ImportError:
+    # for Python3
+    from tkinter import *   ## notice here too
+    from tkinter.filedialog import askopenfilename
+    #from tkinter import filedialog
+#from Tkinter import Tk
 Tk().withdraw() # we don't want a full GUI, so keep the root window from appearing
 # keep the last folder used for the next run. (Maybe http://goo.gl/2lkJV0) or default to ~/Downloads.
 # default to files named *.ZIP. (Lots of info here http://tkinter.unpythonic.net/wiki/tkFileDialog)
@@ -54,7 +62,11 @@ Tk().withdraw() # we don't want a full GUI, so keep the root window from appeari
 # http://programmers.stackexchange.com/questions/253527/where-to-save-something-between-invocations?noredirect=1#comment510007_253527
 # appdirs (https://pypi.python.org/pypi/appdirs/1.4.0) might be best part of figuring out where to save the data.
 theDir = "~/Downloads"
+#if exists(askopenfilename):
 filenames = askopenfilename(multiple=1,filetypes=[("Zip Archives",("*.zip", "*.ZIP"))],initialdir=theDir,title="Businesses ZIP with TXTs")
+#else:
+#    filenames = askopenfilename(multiple=1,filetypes=[("Zip Archives",("*.zip", "*.ZIP"))],initialdir=theDir,title="Businesses ZIP with TXTs")
+
 #filename = askopenfilename(filetypes=[("Zip Archives",("*.zip", "*.ZIP"))],initialdir=theDir,title="Businesses ZIP with TXTs")
 #filename = askopenfilename(filetypes=[("Zip Archives",("*.zip", "*.ZIP"))],initialdir=theDir,title="Load Slide Deck",parent=root)
 #filetypes = [
@@ -71,7 +83,7 @@ if filenames=="":
 
 # put the data into a LibreOffice DB; or import .csv.
 fileOutName = os.path.basename(__file__) + ".csv"
-print fileOutName
+print (fileOutName)
 fileOut = open(fileOutName, 'w')
 
 # put column headings out first.
@@ -95,26 +107,32 @@ s4 += ",PropertyAddressZip"
 #        s1 = "{}, {}, {}, {}, {}, {}".format(os.path.basename(filename), member.filename, documentNumber, bookType, fileDate, fileTime)
 #        s2 = "{}, {}, {}, {}, {}, {}".format(instrumentType, commentAD, numberOfPages, businessOwner1, businessOwner2, businessOwner3)
 #        s3 = "{}, {}, {}, {}, {}".format(propertyAddress1, propertyAddress2, propertyAddressCity, propertyAddressState, propertyAddressZip)
-print s4
+print (s4)
 fileOut.writelines(s4 + "\n")
 
 # askopenfilename() might return multiple files that were selected and should be iterated through.
 for filename in filenames:
     #Pull out TXT file(s)
     import zipfile
-    file = zipfile.ZipFile(filename, 'r')
+    file = zipfile.ZipFile(filename)
+    #file = zipfile.ZipFile(filename, mode='r')
     zipMembers = file.infolist()
 
     #Process each TXT file extracting data and exporting into LibreOffice Database.
     for member in zipMembers:
         #print member, member.filename, member.orig_filename, member.date_time
-        rd = file.read(member,"r")
+        rd = file.read(member)
+        #rd = file.read(member,"r")
         # if file contains "  Internet Explorer cannot display the webpage " skip it.
-        if rd.find(" Internet Explorer cannot display the webpage ") <> -1:
-            # TODO; you have to remember to look at the console messages to see these.
-            # TODO; add counters showing the number of empty @ end of console run.
-            print (str(member.filename) + " is empty.")
-            continue
+        # TODO; I do not know if the following is still relevent.
+        # File "/home/dalem/PycharmProjects/newBusiness1/newBusiness1.py", line 128, in <module>
+        #   if rd.find(" Internet Explorer cannot display the webpage ") != -1:
+        #   TypeError: 'str' does not support the buffer interface
+        #if rd.find(" Internet Explorer cannot display the webpage ") != -1:
+        #    # TODO; you have to remember to look at the console messages to see these.
+        #    # TODO; add counters showing the number of empty @ end of console run.
+        #    print (str(member.filename) + " is empty.")
+        #    continue
         #print rd
         ad = rd.splitlines()
         #00 General Information
@@ -157,7 +175,7 @@ for filename in filenames:
             # probably because there aren't this many lines in the .TXT file.
             businessOwner1 = "*** Too few lines in .TXT file!"
         if businessOwner1 == "VOID, VOID VOID":
-            print "Avoided " + businessOwner1 + ", " + s1
+            print ("Avoided " + businessOwner1 + ", " + s1)
         else:
             try:
                 businessOwner2 = ad[9].strip()
@@ -207,7 +225,7 @@ for filename in filenames:
             #print propertyAddress1, propertyAddress2, propertyAddressCity, propertyAddressState, propertyAddressZip
             # /home/dalem/Downloads/BEXAR_TXT_08142014.ZIP
             s4 = "{}, {}, {}".format(s1, s2, s3)
-            print s4
+            print (s4)
 
             # TODO; lookup phone numbers for this entity.
             """
