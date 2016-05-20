@@ -2,6 +2,8 @@
 
 dateutils
 
+#apt-get install python3-tk
+
 #python==3 # Python3 for ZipFile and tkinter.
 
 #Python3
@@ -10,6 +12,5 @@ dateutils
 #Fails ZipFile processing. python==3 # converted because Tkinter not available at DaleHome.QnD.
 # No longer #python==2 # google-api-python-client v3 segoogle-api-python-clientems requires Python2
 
-#Python2
-#Tkinter
-
+#I got this working at DaleHome.QnD this week. But I think it was for python2.
+#apt-get install python3-tk
