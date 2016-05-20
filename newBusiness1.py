@@ -101,10 +101,15 @@ for filename in filenames:
         #01
         #02 Document Number:  20140486166 Book Type:  ASSUMED NAMES
         #03 Filed Date:  8/14/2014 Filing Time:  4:43 PM
-        documentNumber = ad[2][18:29].strip()
-        bookType = ad[2][42:].strip()
-        fileDate = ad[3][12:22].strip()
-        fileTime = ad[3][36:].strip()
+        documentNumber = ad[2][18:29].strip().decode("utf-8")
+        bookType = ad[2][42:].strip().decode("utf-8")
+        fileDate = ad[3][12:22].strip().decode("utf-8")
+        fileTime = ad[3][36:].strip().decode("utf-8")
+        #Fr 20 May 2016 8:37 AM CST, getting b'<data>' on fields DocumentNumber, bookType, fileDate, fileTime, NumberOfPages, BusinessOwner1, BusinessOwner2, BusinessOwner3, and others...
+        # It didn't used to get the "b'<data>'" surrounding <data>. What's changed? Python3 now outputs the type surrounding or it's changed it's defaults?
+        # Maybe it used to be Python2 and I've not noticed the different output since converting to Python3.
+        # DocumentNumber.decode('utf-8')?
+        # Fix: after every .strip().decode("utf=8")
         s1 = '"{}", "{}", "{}", "{}", "{}", "{}"'.format(os.path.basename(filename), member.filename, documentNumber, bookType, fileDate, fileTime)
         #print s1
         #print filename, member.filename, documentNumber, bookType, fileDate, fileTime
@@ -120,19 +125,19 @@ for filename in filenames:
         #10 RIVERA, RUDY RAUL
         try:
             cp = ad[4].index("Comment:")
-            instrumentType = ad[4][18:cp - 1].strip()
-            commentAD = ad[4][cp + 9:].strip()
+            instrumentType = ad[4][18:cp - 1].strip().decode("utf-8")
+            commentAD = ad[4][cp + 9:].strip().decode("utf-8")
         except:
             instrumentType = ""
             commentAD = ""
         try:
-            numberOfPages = ad[5][11:].strip()
+            numberOfPages = ad[5][11:].strip().decode("utf-8")
         except:
             # probably because there aren't this many lines in the .TXT file.
             numberOfPages = 0 # TODO; some better error reporting is called for here.
         # TODO; Might miss some business owners; can be multiple lines and ends before 1) blank line then 2) "Property Address"
         try:
-            businessOwner1 = ad[8].strip()
+            businessOwner1 = ad[8].strip().decode("utf-8")
         except:
             # probably because there aren't this many lines in the .TXT file.
             businessOwner1 = "*** Too few lines in .TXT file!"
@@ -140,11 +145,11 @@ for filename in filenames:
             print ("Avoided " + businessOwner1 + ", " + s1)
         else:
             try:
-                businessOwner2 = ad[9].strip()
+                businessOwner2 = ad[9].strip().decode("utf-8")
             except:
                 businessOwner2 = "*** Too few lines in .TXT file!"
             try:
-                businessOwner3 = ad[10].strip()
+                businessOwner3 = ad[10].strip().decode("utf-8")
             except:
                 businessOwner3 = "*** Too few lines in .TXT file!"
             s2 = '"{}", "{}", "{}", "{}", "{}", "{}"'.format(instrumentType, commentAD, numberOfPages, businessOwner1, businessOwner2, businessOwner3)
@@ -175,11 +180,11 @@ for filename in filenames:
             propertyAddress1 = propertyAddress2 = propertyAddressCity = propertyAddressState = propertyAddressZip = ""
             # sometimes the property address is missing.
             try:
-                propertyAddress1 = ad[pa + 2][11:].strip()
-                propertyAddress2 = ad[pa + 3][11:].strip()
-                propertyAddressCity = ad[pa + 4][6:].strip()
-                propertyAddressState = ad[pa + 5][7:].strip()
-                propertyAddressZip = ad[pa + 6][5:].strip()
+                propertyAddress1 = ad[pa + 2][11:].strip().decode("utf-8")
+                propertyAddress2 = ad[pa + 3][11:].strip().decode("utf-8")
+                propertyAddressCity = ad[pa + 4][6:].strip().decode("utf-8")
+                propertyAddressState = ad[pa + 5][7:].strip().decode("utf-8")
+                propertyAddressZip = ad[pa + 6][5:].strip().decode("utf-8")
             except:
                 pass
             s3 = '"{}", "{}", "{}", "{}", "{}"'.format(propertyAddress1, propertyAddress2, propertyAddressCity, propertyAddressState, propertyAddressZip)
