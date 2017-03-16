@@ -1,3 +1,6 @@
+Similar online copy of this document is here:
+    https://docs.google.com/document/d/1jyk39k5V_YD1i2quBNK0H1Jv8hTa--PhmqRjOSAdlhA/edit#
+
 Installation:
     Download some BEXAR_TXT_08112014.ZIP type files into ~/Downloads
     Install PyCharm

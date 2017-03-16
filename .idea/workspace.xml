@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a1541bd3-25ef-45cd-87d6-529cd0f949e4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/newBusiness1.py" afterPath="$PROJECT_DIR$/newBusiness1.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infoNewBusiness.txt" afterPath="$PROJECT_DIR$/infoNewBusiness.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,17 +19,17 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="infoNewBusiness.txt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="infoNewBusiness.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/infoNewBusiness.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="42" column="33" lean-forward="true" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
+            <state relative-caret-position="30">
+              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="newBusiness1.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="newBusiness1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/newBusiness1.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="280">
@@ -53,6 +53,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/newBusiness1.py" />
+        <option value="$PROJECT_DIR$/infoNewBusiness.txt" />
       </list>
     </option>
   </component>
@@ -276,6 +277,14 @@
       <option name="presentableId" value="Default" />
       <updated>1489589587536</updated>
     </task>
+    <task id="LOCAL-00001" summary="Handle the Property Address section differently!">
+      <created>1489671012237</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1489671012237</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -316,6 +325,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Handle the Property Address section differently!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Handle the Property Address section differently!" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -353,18 +366,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/infoNewBusiness.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="42" column="33" lean-forward="true" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/newBusiness1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="170" column="22" lean-forward="false" selection-start-line="170" selection-start-column="22" selection-end-line="170" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infoNewBusiness.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
