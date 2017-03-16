@@ -135,7 +135,7 @@ for filename in filenames:
         except:
             # probably because there aren't this many lines in the .TXT file.
             numberOfPages = 0 # TODO; some better error reporting is called for here.
-        # TODO; Might miss some business owners; can be multiple lines and ends before 1) blank line then 2) "Property Address"
+        # Might miss some business owners; can be multiple lines and ends before 1) blank line then 2) "Property Address"
         try:
             businessOwner1 = ad[8].strip().decode("utf-8")
         except:
@@ -152,6 +152,7 @@ for filename in filenames:
                 businessOwner3 = ad[10].strip().decode("utf-8")
             except:
                 businessOwner3 = "*** Too few lines in .TXT file!"
+            # consider allowing more businessOwners through a blank line. Put them all into a list structure inside BusinessOwners.
             s2 = '"{}", "{}", "{}", "{}", "{}", "{}"'.format(instrumentType, commentAD, numberOfPages, businessOwner1, businessOwner2, businessOwner3)
             #print s1
             #print instrumentType, commentAD, numberOfPages, businessOwner1, businessOwner2, businessOwner3
@@ -168,7 +169,6 @@ for filename in filenames:
 
 
             """
-                TODO; Handle the Property Address section differently!
                 The Property Address section looks like:
                 Property Address
 
@@ -181,7 +181,7 @@ for filename in filenames:
             """
 
             for paln in range(imin, imax):
-                if ad[paln].strip() == "Property Address":
+                if ad[paln].strip().decode("utf-8")  == "Property Address":
                     pa = paln
                     break
             #13
@@ -210,8 +210,15 @@ for filename in filenames:
 
             # TODO; lookup phone numbers for this entity.
             """
-            Search for BusinessOwner1 + PropertyAddress2 (Not if PO Box) + PropertyCity + PropertyState + PropertyZip + ", phone"
-            Maybe 'Google Place API' is a good place to start, thought I don't think so.
+            Google search for BusinessOwner1 + PropertyAddress2 (Not if PO Box) + PropertyCity + PropertyState + PropertyZip + ", phone".
+            If Phone: (210) ???-???? keep that and move on to the next listing.
+            Take the first non-advertisement listing.
+            Pull out the first 210 phone number.
+
+            BeautifulSoup (parses) vs Scrapy (crawls).
+            Use Scrapy. Examples https://github.com/search?utf8=%E2%9C%93&q=scrapy+phone&type=Repositories&ref=searchresults
+
+            Maybe 'Google Place API' is a good place to start; nope - I don't think so.
 
             """
 
