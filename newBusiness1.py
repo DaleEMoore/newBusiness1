@@ -166,6 +166,20 @@ for filename in filenames:
             if len(ad) < imax:
                 imax=len(ad)
 
+
+            """
+                TODO; Handle the Property Address section differently!
+                The Property Address section looks like:
+                Property Address
+
+                Address 1: .
+                Address 2: 11400 CULEBRA #204
+                City: SAN ANTONIO
+                State: TX
+                Zip: 78254-
+                I should look for “Property Address”, skip the blank line then process.
+            """
+
             for paln in range(imin, imax):
                 if ad[paln].strip() == "Property Address":
                     pa = paln
@@ -197,7 +211,8 @@ for filename in filenames:
             # TODO; lookup phone numbers for this entity.
             """
             Search for BusinessOwner1 + PropertyAddress2 (Not if PO Box) + PropertyCity + PropertyState + PropertyZip + ", phone"
-            Google Place API is a good place to start
+            Maybe 'Google Place API' is a good place to start, thought I don't think so.
+
             """
 
             fileOut.writelines(s4 + "\n")
