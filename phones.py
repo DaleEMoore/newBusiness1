@@ -16,7 +16,10 @@ with open('newBusiness1.py.csv', newline='') as csvfile:
     for row in spamreader:
         print(str(row))
         print(row["ZipFile"] + row["TxtFile"] + row["DocumentNumber"])
+        # TODO; Use scrapy or BeautifulSoup to search web. scrapy is powerful framework; BeautifulSoup parses a URL.
+        # Use scrapy. Install and configure scrapy.
         # TODO; google lookup phone numbers
+        # Google Search BusinessOwner1, PropertyAddress2, PropertyAddressCity, PropertyAddressState, PropertyAddressZip
         # TODO; write this spamreader row and the new information.
         #print(', '.join(row))
 #import csv

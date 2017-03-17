@@ -1,16 +1,16 @@
 # C:\Users\dalem\PycharmProjects/newBusiness1>\Python27\Scripts\pip.exe install -r requirements.txt
-
-dateutils
-
-#apt-get install python3-tk
-
+#Python3
 #python==3 # Python3 for ZipFile and tkinter.
 
-#Python3
+scrapy  # web crawler and scraper to find phone numbers
+        # Strongly suggest virtualenv! Can I do that standard in PyCharm?
+        # https://doc.scrapy.org/en/latest/intro/install.html
+        # pip3 install scrapy
+dateutils
+#apt-get install python3-tk
 #tkinter
 
 #Fails ZipFile processing. python==3 # converted because Tkinter not available at DaleHome.QnD.
 # No longer #python==2 # google-api-python-client v3 segoogle-api-python-clientems requires Python2
-
 #I got this working at DaleHome.QnD this week. But I think it was for python2.
 #apt-get install python3-tk
