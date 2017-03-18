@@ -6,6 +6,10 @@ scrapy  # web crawler and scraper to find phone numbers
         # Strongly suggest virtualenv! Can I do that standard in PyCharm?
         # https://doc.scrapy.org/en/latest/intro/install.html
         # pip3 install scrapy
+        # cd ~/.Pycharm/Projects/newBusiness1
+        # scrapy startproject getPhones newBusiness1
+        # scrapy genspider example example.com
+        # scrapy crawal example
 dateutils
 #apt-get install python3-tk
 #tkinter

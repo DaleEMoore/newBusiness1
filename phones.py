@@ -18,6 +18,14 @@ with open('newBusiness1.py.csv', newline='') as csvfile:
         print(row["ZipFile"] + row["TxtFile"] + row["DocumentNumber"])
         # TODO; Use scrapy or BeautifulSoup to search web. scrapy is powerful framework; BeautifulSoup parses a URL.
         # Use scrapy. Install and configure scrapy.
+        # https://doc.scrapy.org/en/latest/intro/examples.html
+        # https://github.com/scrapy/quotesbot
+        # dalem@QnD:~/PycharmProjects/newBusiness1⟫ scrapy crawl mw --logfile ./scrapy.log
+        # Nice scrapy tutorial: https://doc.scrapy.org/en/latest/intro/tutorial.html
+        # Selectors: https://doc.scrapy.org/en/latest/topics/selectors.html
+        # TODO; use scrapy command line "scrapy crawl mw --logfile ./scrapy.log" to find some stuff in MooreWorks.Net.
+        # TODO; use scrapy in parse.py to do the same thing as "scrapy crawl mw --logfile ./scrapy.log".
+
         # TODO; google lookup phone numbers
         # Google Search BusinessOwner1, PropertyAddress2, PropertyAddressCity, PropertyAddressState, PropertyAddressZip
         # TODO; write this spamreader row and the new information.
