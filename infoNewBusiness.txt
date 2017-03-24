@@ -43,6 +43,9 @@ Process each TXT file extracting data and exporting into LibreOffice Database.
 
 TODO
 Wait on scrapy for phone lookup! Get mileage from an address so we can find the closest prospects to visit.
+    https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=google+api+to+get+mileage+between+two+addresses&*
+    Or feed the data to Google Maps to see clusters and distances.
+
 
 Ron Locke reminds me on Friday 24 March 2017 that his calls into the BEXAR County DBA, assumed names, list from SA
 Business Journal put him off making any sales calls because those people are called by EVERYONE. He thinks a drop-

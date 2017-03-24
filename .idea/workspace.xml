@@ -22,8 +22,8 @@
       <file leaf-file-name="infoNewBusiness.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/infoNewBusiness.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="44" column="107" lean-forward="false" selection-start-line="44" selection-start-column="107" selection-end-line="44" selection-end-column="107" />
+            <state relative-caret-position="184">
+              <caret line="47" column="4" lean-forward="true" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -330,7 +330,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490378966065</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Wait on scrapy for phone lookup! Get mileage from an address so we can find the closest prospects to visit.">
+      <created>1490378980479</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1490378980479</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView">
@@ -794,8 +801,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/infoNewBusiness.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="44" column="107" lean-forward="false" selection-start-line="44" selection-start-column="107" selection-end-line="44" selection-end-column="107" />
+        <state relative-caret-position="184">
+          <caret line="47" column="4" lean-forward="true" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
           <folding />
         </state>
       </provider>
