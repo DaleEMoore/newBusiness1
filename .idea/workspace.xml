@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a1541bd3-25ef-45cd-87d6-529cd0f949e4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infoNewBusiness.txt" afterPath="$PROJECT_DIR$/infoNewBusiness.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,7 +22,7 @@
         <entry file="file://$PROJECT_DIR$/infoNewBusiness.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="184">
-              <caret line="47" column="4" lean-forward="true" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
+              <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -337,7 +336,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490378980479</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Google Maps clustering">
+      <created>1490379622279</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1490379622279</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView">
@@ -403,7 +409,8 @@
     <MESSAGE value="Lookup phone numbers. Write new CSV with old record and new data." />
     <MESSAGE value="insync" />
     <MESSAGE value="Wait on scrapy for phone lookup! Get mileage from an address so we can find the closest prospects to visit." />
-    <option name="LAST_COMMIT_MESSAGE" value="Wait on scrapy for phone lookup! Get mileage from an address so we can find the closest prospects to visit." />
+    <MESSAGE value="Google Maps clustering" />
+    <option name="LAST_COMMIT_MESSAGE" value="Google Maps clustering" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -802,7 +809,7 @@
     <entry file="file://$PROJECT_DIR$/infoNewBusiness.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
-          <caret line="47" column="4" lean-forward="true" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
+          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding />
         </state>
       </provider>
