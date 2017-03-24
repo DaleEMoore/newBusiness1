@@ -7,13 +7,13 @@ import os
 
 #Select ZIP file from Downloads
 try:
-    # for Python2
-    from Tkinter import *   ## notice capitalized T in Tkinter
-    from tkFileDialog import askopenfilename
-except ImportError:
     # for Python3
     from tkinter import *   ## notice here too
     from tkinter.filedialog import askopenfilename
+except ImportError:
+    # for Python2
+    from Tkinter import *   ## notice capitalized T in Tkinter
+    from tkFileDialog import askopenfilename
     #from tkinter import filedialog
 #from Tkinter import Tk
 Tk().withdraw() # we don't want a full GUI, so keep the root window from appearing

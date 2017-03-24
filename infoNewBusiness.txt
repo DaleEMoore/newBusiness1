@@ -42,6 +42,10 @@ Process each TXT file extracting data and exporting into LibreOffice Database.
 
 
 TODO
+Ron Locke reminds me on Friday 24 March 2017 that his calls into the BEXAR County DBA, assumed names, list from SA
+Business Journal put him off making any sales calls because those people are called by EVERYONE. He thinks a drop-
+in visit is a better thing (what Caleb has been asking to do for some time.)
+
 Improve this so that I get contact phone numbers from the Internet.
     Do the "TODO; lookup phone numbers for this entity" manually researching the best approach to automation.
     Make some calls on the mining I've already done manually.
