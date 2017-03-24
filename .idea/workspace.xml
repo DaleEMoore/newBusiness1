@@ -4,8 +4,6 @@
     <list default="true" id="a1541bd3-25ef-45cd-87d6-529cd0f949e4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infoNewBusiness.txt" afterPath="$PROJECT_DIR$/infoNewBusiness.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/newBusiness1.py" afterPath="$PROJECT_DIR$/newBusiness1.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/newBusiness1.py.csv" afterPath="$PROJECT_DIR$/newBusiness1.py.csv" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,8 +22,8 @@
       <file leaf-file-name="infoNewBusiness.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/infoNewBusiness.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+            <state relative-caret-position="133">
+              <caret line="44" column="107" lean-forward="false" selection-start-line="44" selection-start-column="107" selection-end-line="44" selection-end-column="107" />
               <folding />
             </state>
           </provider>
@@ -325,7 +323,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490295897065</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Wait on scrapy for phone lookup! Get mileage from an address so we can find the closest prospects to visit.">
+      <created>1490378966065</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1490378966065</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -390,7 +395,8 @@
     <MESSAGE value="in sync" />
     <MESSAGE value="Lookup phone numbers. Write new CSV with old record and new data." />
     <MESSAGE value="insync" />
-    <option name="LAST_COMMIT_MESSAGE" value="insync" />
+    <MESSAGE value="Wait on scrapy for phone lookup! Get mileage from an address so we can find the closest prospects to visit." />
+    <option name="LAST_COMMIT_MESSAGE" value="Wait on scrapy for phone lookup! Get mileage from an address so we can find the closest prospects to visit." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -454,7 +460,7 @@
         <state relative-caret-position="714">
           <caret line="42" column="48" lean-forward="false" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
           <folding>
-            <element signature="e#198#208#0" expanded="true" />
+            <element signature="e#198#208#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -496,7 +502,7 @@
         <state relative-caret-position="714">
           <caret line="42" column="48" lean-forward="false" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
           <folding>
-            <element signature="e#198#208#0" expanded="true" />
+            <element signature="e#198#208#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -538,7 +544,7 @@
         <state relative-caret-position="630">
           <caret line="42" column="48" lean-forward="false" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
           <folding>
-            <element signature="e#198#208#0" expanded="true" />
+            <element signature="e#198#208#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -587,7 +593,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#198#208#0" expanded="true" />
+            <element signature="e#198#208#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -612,7 +618,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#198#208#0" expanded="true" />
+            <element signature="e#198#208#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -637,7 +643,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#198#208#0" expanded="true" />
+            <element signature="e#198#208#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -741,7 +747,7 @@
         <state relative-caret-position="714">
           <caret line="42" column="48" lean-forward="false" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
           <folding>
-            <element signature="e#198#208#0" expanded="true" />
+            <element signature="e#198#208#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -788,8 +794,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/infoNewBusiness.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+        <state relative-caret-position="133">
+          <caret line="44" column="107" lean-forward="false" selection-start-line="44" selection-start-column="107" selection-end-line="44" selection-end-column="107" />
           <folding />
         </state>
       </provider>

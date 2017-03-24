@@ -42,6 +42,8 @@ Process each TXT file extracting data and exporting into LibreOffice Database.
 
 
 TODO
+Wait on scrapy for phone lookup! Get mileage from an address so we can find the closest prospects to visit.
+
 Ron Locke reminds me on Friday 24 March 2017 that his calls into the BEXAR County DBA, assumed names, list from SA
 Business Journal put him off making any sales calls because those people are called by EVERYONE. He thinks a drop-
 in visit is a better thing (what Caleb has been asking to do for some time.)
