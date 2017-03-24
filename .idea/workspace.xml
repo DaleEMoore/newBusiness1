@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a1541bd3-25ef-45cd-87d6-529cd0f949e4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infoNewBusiness.txt" afterPath="$PROJECT_DIR$/infoNewBusiness.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,8 +22,8 @@
       <file leaf-file-name="infoNewBusiness.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/infoNewBusiness.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+            <state relative-caret-position="201">
+              <caret line="48" column="117" lean-forward="false" selection-start-line="48" selection-start-column="117" selection-end-line="48" selection-end-column="117" />
               <folding />
             </state>
           </provider>
@@ -343,7 +344,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490379622279</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="insync">
+      <created>1490379759304</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1490379759304</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView">
@@ -407,10 +415,10 @@
     <MESSAGE value="Handle the Property Address section differently!" />
     <MESSAGE value="in sync" />
     <MESSAGE value="Lookup phone numbers. Write new CSV with old record and new data." />
-    <MESSAGE value="insync" />
     <MESSAGE value="Wait on scrapy for phone lookup! Get mileage from an address so we can find the closest prospects to visit." />
     <MESSAGE value="Google Maps clustering" />
-    <option name="LAST_COMMIT_MESSAGE" value="Google Maps clustering" />
+    <MESSAGE value="insync" />
+    <option name="LAST_COMMIT_MESSAGE" value="insync" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -808,8 +816,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/infoNewBusiness.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+        <state relative-caret-position="201">
+          <caret line="48" column="117" lean-forward="false" selection-start-line="48" selection-start-column="117" selection-end-line="48" selection-end-column="117" />
           <folding />
         </state>
       </provider>
