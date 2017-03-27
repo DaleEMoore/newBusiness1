@@ -38,16 +38,21 @@ Select ZIP file from Downloads
 Pull out TXT file(s)
 Process each TXT file extracting data and exporting into LibreOffice Database.
 
+Best Prospects TODO might be https://docs.google.com/document/d/1jyk39k5V_YD1i2quBNK0H1Jv8hTa--PhmqRjOSAdlhA/edit#.
 
 
 
 TODO
+As of Monday 27 March 2017 11:22 AM CST, wait a while giving Caleb the information that now includes addresses and he
+    can import to http://maps.google.com to see where they are. I’ve suggested he drop by the prospects easily between
+    his home and Moore Works on Thursdays and Fridays to gather the “low hanging fruit.” Let’s see how that goes for a
+    while then implement other solutions.
+
 Wait on scrapy for phone lookup! Get mileage from an address so we can find the closest prospects to visit.
     https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=google+api+to+get+mileage+between+two+addresses&*
     Or feed the data to Google Maps to see clusters and distances.
     https://support.google.com/mymaps/answer/3024836?hl=en
     https://www.google.com/maps/d/edit?mid=1dvTRQZ9iYHFINC8ab8bLN3a5hSo&ll=34.66996596774281%2C-86.61222844999998&z=6
-
 
 Ron Locke reminds me on Friday 24 March 2017 that his calls into the BEXAR County DBA, assumed names, list from SA
 Business Journal put him off making any sales calls because those people are called by EVERYONE. He thinks a drop-
