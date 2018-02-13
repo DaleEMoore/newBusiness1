@@ -1,4 +1,5 @@
-# python3 newBusiness1.py
+#!/usr/bin/env python3
+# newBusiness1.py
 # See: infoNewBusiness.txt for more information.
 
 __author__ = 'DaleEMoore@gMail.Com'
